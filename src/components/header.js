@@ -1,42 +1,16 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { Grid, Box, Text } from '@chakra-ui/core';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = () => {
+  return (
+    <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+      <Text>Home</Text>
+      <Text>About</Text>
+      <Text>Articles</Text>
+      <Text>Home</Text>
+      <Text>Home</Text>
+    </Grid>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
