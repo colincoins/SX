@@ -7,10 +7,27 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Box } from '@chakra-ui/core'
+import Header from "./Header"
+import Footer from './Footer';
+
+import { useColorMode } from '@chakra-ui/core';
 
 const Layout = ({ children }) => {
+
+  const { colorMode } = useColorMode();
+
+  const bg = { light: "white", dark: "gray.800" };
+  const textColor = { light: "gray.800", dark: "white"}
+
   return (
-    children 
+    <Box bg={bg[colorMode]} color={textColor[colorMode]}> 
+      <Header/>
+      <Box display="flex" minHeight="100vh" flexDirection="column" maxWidth="900px" margin="0 auto">
+        {children}
+      </Box>
+      <Footer/> 
+    </Box>
   )
 }
 

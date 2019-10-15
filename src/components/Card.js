@@ -16,18 +16,13 @@ const Card = () => {
     }
   `)
 
-  console.log('the data', spacex);
   const { launches } = spacex
   const first_launch = launches[0]
+  
   return (
-    <Box 
-      width={[
-        "100%",
-      ]}
+    <Box
       maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
       <Image src="http://thumbor-prod-us-east-1.photo.aws.arc.pub/Qf8rTiJlxQqrSc60FhyVHSMeCGw=/arc-anglerfish-arc2-prod-bonnier/public/2RUDSLUUYUD6GKH6EZ5DF7VUKE.jpg" alt="astronaut" />
-
-
       <Box p="6">
         <Box d="flex" alignItems="baseline">
           <Badge rounded full="full" px="2" variantColor="teal">
@@ -47,7 +42,6 @@ const Card = () => {
           mt="1"
           fontWeight="semibold"
           as="h4"
-          lineHeight="tight"
           isTruncated
         >
           {first_launch.mission_name}

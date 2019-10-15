@@ -6,13 +6,14 @@
 
 // You can delete this file if you're not using it
 import React from 'react';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core'
+import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core'
+import { customTheme } from './src/components/theme'
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={customTheme}>
       <CSSReset />
-      {element}
+      <ColorModeProvider>{element}</ColorModeProvider>
     </ThemeProvider>
   )
 }
