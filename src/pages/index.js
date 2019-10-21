@@ -36,33 +36,11 @@ const IndexPage = () => (
   </Box>
   <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
     <Card />
-    {/* <Text
-      fontWeight="bold"
-      textTransform="uppercase"
-      fontSize="sm"
-      letterSpacing="wide"
-      color="teal.600"
-    >
-      Marketing
-    </Text>
-    <Link
-      mt={1}
-      display="block"
-      fontSize="lg"
-      lineHeight="normal"
-      fontWeight="semibold"
-      href="#"
-    >
-      Finding customers for your new business
-    </Link>
-    <Text mt={2} color="gray.500">
-      Getting a new business off the ground is a lot of hard work. Here are five
-      ideas you can use to find your first customers.
-    </Text> */}
+
   </Box>
 </Box>
 
-<Box borderTop="solid 1px gray"p={10} display={{ md: "flex" }}>
+<Box borderTop="solid 1px #808080"p={10} display={{ md: "flex" }}>
   <Box flexShrink="0">
     <Image
       rounded="lg"
@@ -91,14 +69,14 @@ const IndexPage = () => (
     >
       Finding customers for your new business
     </Link>
-    <Text mt={2} color="gray.500">
+    <Text mt={2} color="#808080">
       Getting a new business off the ground is a lot of hard work. Here are five
       ideas you can use to find your first customers.
     </Text>
   </Box>
 </Box>
 
-<Box borderTop="1px solid gray" p={10} display={{ md: "flex" }}>
+<Box borderTop="1px solid #808080" p={10} display={{ md: "flex" }}>
   <Box flexShrink="0">
     <Image
       rounded="lg"
@@ -127,7 +105,7 @@ const IndexPage = () => (
     >
       Finding customers for your new business
     </Link>
-    <Text mt={2} color="gray.500">
+    <Text mt={2} color="#808080">
       Getting a new business off the ground is a lot of hard work. Here are five
       ideas you can use to find your first customers.
     </Text>

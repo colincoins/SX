@@ -4,14 +4,14 @@ import { Link, Text, Box, Stack } from '@chakra-ui/core';
 
 const FooterLink = ({ icon, href }) => (
   <Link display="inline-block" href={href} isExternal>
-    <Box as={icon} size="6" color="gray.400" />
+    <Box as={icon} size="6" color="#A0AEC0" />
   </Link>
 );
 
 const Footer = () => {
   return (
-    <Box as="footer" paddingTop="5" paddingBottom="5" textAlign="center" borderTop="solid 1px gray">
-      <Text fontSize="sm">Designed & Developed by @colincoins</Text>
+    <Box as="footer" paddingTop="5" paddingBottom="5" textAlign="center" borderTop="solid 1px #808080">
+      <Text fontSize="sm">Developed with GatsbyJS, GraphQL, and Chakra.UI</Text>
       <Stack
         shouldWrapChildren
         isInline

@@ -29,7 +29,7 @@ const Card = () => {
             Launch ID:
           </Badge>
           <Box
-            color="gray.500"
+            color="#718096"
             fontWeight="semibold"
             letterSpacing="wide"
             fontSize="xs"

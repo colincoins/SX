@@ -5559,6 +5559,11 @@ gatsby-page-utils@^0.0.27:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
+gatsby-plugin-chakra-ui@^0.1.0:
+  version "0.1.0"
+  resolved "https://hbc.jfrog.io/hbc/api/npm/hbc-virt-npm/gatsby-plugin-chakra-ui/-/gatsby-plugin-chakra-ui-0.1.0.tgz#00d5f90d6f2dc3d5b0ac3b5658a00211319d3fae"
+  integrity sha1-ANX5DW8tw9WwrDtWWKACETGdP64=
+
 gatsby-plugin-manifest@^2.2.23:
   version "2.2.23"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.23.tgz#7ee152f3758645ef4ace2c06f446dc4b2f058730"

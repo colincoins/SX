@@ -38,6 +38,13 @@ module.exports = {
         url: "https://api.spacex.land/graphql/",
       },
     },
+    {
+      resolve: "gatsby-plugin-chakra-ui",
+      options: {
+        isResettingCSS: true, // optional, default to true
+        isUsingColorMode: true, // optional, default to true
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

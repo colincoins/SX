@@ -17,9 +17,8 @@ const Layout = ({ children }) => {
 
   const { colorMode } = useColorMode();
 
-  const bg = { light: "white", dark: "gray.800" };
-  const textColor = { light: "gray.800", dark: "white"}
-
+  const bg = { light: "white", dark: "#1A202C" };
+  const textColor = { light: "#1A202C", dark: "white"}
   return (
     <Box bg={bg[colorMode]} color={textColor[colorMode]}> 
       <Header/>
